@@ -1,6 +1,6 @@
 import shutil
 import os
-from dashcam.record import VIDEO_DIR  # Missing import
+from record import VIDEO_DIR  # Missing import
 
 def check_storage():
     total, used, free = shutil.disk_usage("/")
