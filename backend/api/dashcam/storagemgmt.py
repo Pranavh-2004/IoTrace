@@ -1,4 +1,6 @@
 import shutil
+import os
+from dashcam.record import VIDEO_DIR  # Missing import
 
 def check_storage():
     total, used, free = shutil.disk_usage("/")
@@ -9,5 +11,3 @@ def delete_old_videos():
     files = sorted([f for f in os.listdir(VIDEO_DIR) if not f.startswith("CRASH_")])
     while len(files) > 5:  # Keep 5 normal videos
         os.remove(os.path.join(VIDEO_DIR, files.pop(0)))
-
-check_storage()

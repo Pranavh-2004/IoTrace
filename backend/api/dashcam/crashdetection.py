@@ -1,6 +1,8 @@
 # do pip insatll smbus2
 import smbus
 import math
+import os
+from record import VIDEO_DIR  # Missing import
 
 # MPU6050 Registers
 MPU_ADDR = 0x68
@@ -27,5 +29,3 @@ def detect_crash():
 def save_crash_video():
     latest_video = sorted(os.listdir(VIDEO_DIR))[-1]
     os.rename(f"{VIDEO_DIR}/{latest_video}", f"{VIDEO_DIR}/CRASH_{latest_video}")
-
-detect_crash()

@@ -2,6 +2,7 @@
 
 import serial
 import pynmea2
+from record import VIDEO_DIR 
 
 GPS_PORT = "/dev/serial0"
 gps = serial.Serial(GPS_PORT, baudrate=9600, timeout=1)
@@ -20,4 +21,4 @@ def read_gps():
                 with open(f"{VIDEO_DIR}/gps_log.txt", "a") as f:
                     f.write(f"{msg.timestamp}, {latitude}, {longitude}, {speed_kmh} km/h\n")
 
-read_gps()
+
