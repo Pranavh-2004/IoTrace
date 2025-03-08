@@ -199,17 +199,64 @@ export default function CaseDetails() {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center min-h-screen">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600" />
-      </div>
+      <main className="min-h-screen bg-gray-50">
+        <nav className="bg-indigo-600 text-white p-4">
+          <div className="container mx-auto flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <Shield className="w-8 h-8" />
+              <span className="text-xl font-bold">IoT Log Vault</span>
+            </div>
+          </div>
+        </nav>
+        <div className="flex justify-center items-center min-h-[calc(100vh-64px)]">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600" />
+        </div>
+      </main>
     );
   }
 
   if (error) {
     return (
-      <div className="flex justify-center items-center min-h-screen">
-        <div className="text-red-600">{error}</div>
-      </div>
+      <main className="min-h-screen bg-gray-50">
+        <nav className="bg-indigo-600 text-white p-4">
+          <div className="container mx-auto flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <Shield className="w-8 h-8" />
+              <span className="text-xl font-bold">IoT Log Vault</span>
+            </div>
+          </div>
+        </nav>
+        <div className="container mx-auto px-4 py-8">
+          <div className="mb-8">
+            <Link href="/dashboard">
+              <Button variant="ghost" className="flex items-center space-x-2">
+                <ArrowLeft className="w-4 h-4" />
+                <span>Back to Dashboard</span>
+              </Button>
+            </Link>
+          </div>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>{caseData?.title || "Case Details"}</CardTitle>
+              {caseData?.created_at && (
+                <CardDescription>
+                  Created on{" "}
+                  {new Date(caseData.created_at).toLocaleDateString()}
+                </CardDescription>
+              )}
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col items-center justify-center p-8 text-center">
+                <div className="text-red-600 mb-4">{error}</div>
+                <p className="text-gray-600">
+                  Please wait till the log file is collected.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </main>
     );
   }
 
