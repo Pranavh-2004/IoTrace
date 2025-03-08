@@ -14,6 +14,9 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
+  PieChart,
+  Pie,
+  Cell,
 } from "recharts";
 import { supabase } from "@/lib/supabase";
 import {
@@ -222,6 +225,49 @@ export default function CaseDetails() {
     return `hsl(${hue}, 70%, 50%)`;
   });
 
+  // Calculate component statistics
+  const componentStats = csvData.reduce((acc, row) => {
+    const component = String(row.component || row.package || "unknown");
+    const currentCount = (acc[component] || 0) as number;
+    acc[component] = currentCount + 1;
+    return acc;
+  }, {} as Record<string, number>);
+
+  // Get top 10 components and combine the rest into "Others"
+  const sortedComponents = Object.entries(componentStats).sort(
+    ([, a], [, b]) => Number(b) - Number(a)
+  );
+
+  const pieChartData = sortedComponents.slice(0, 10).map(([name, value]) => ({
+    name,
+    value: Number(value),
+  }));
+
+  // Add "Others" category if there are more than 10 components
+  if (sortedComponents.length > 10) {
+    const othersValue = sortedComponents
+      .slice(10)
+      .reduce((sum, [, value]) => sum + Number(value), 0);
+
+    pieChartData.push({
+      name: "Others",
+      value: othersValue,
+    });
+  }
+
+  // Generate colors for pie chart (including potential "Others" category)
+  const pieColors = pieChartData.map((_, index) => {
+    // Use a gray color for "Others" category
+    if (
+      index === pieChartData.length - 1 &&
+      pieChartData[index].name === "Others"
+    ) {
+      return "hsl(0, 0%, 75%)";
+    }
+    const hue = (index * 137.5) % 360;
+    return `hsl(${Math.floor(hue)}, 70%, 50%)`;
+  });
+
   return (
     <main className="min-h-screen bg-gray-50">
       <nav className="bg-indigo-600 text-white p-4">
@@ -265,9 +311,9 @@ export default function CaseDetails() {
           {/* Chart Visualization */}
           <Card>
             <CardHeader>
-              <CardTitle>Data Visualization</CardTitle>
+              <CardTitle>Time Series Visualization</CardTitle>
               <CardDescription>
-                Time series visualization of IoT data
+                Time series visualization of IoT data metrics
               </CardDescription>
             </CardHeader>
             <CardContent className="h-[400px]">
@@ -300,8 +346,48 @@ export default function CaseDetails() {
             </CardContent>
           </Card>
 
-          {/* CSV Data Table */}
+          {/* Component Distribution Pie Chart */}
           <Card>
+            <CardHeader>
+              <CardTitle>Component Distribution</CardTitle>
+              <CardDescription>
+                Distribution of logs across different components
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="h-[400px]">
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie
+                    data={pieChartData}
+                    dataKey="value"
+                    nameKey="name"
+                    cx="50%"
+                    cy="50%"
+                    innerRadius={60}
+                    outerRadius={120}
+                    label={false}
+                    labelLine={false}
+                  >
+                    {pieChartData.map((entry, index) => (
+                      <Cell key={`cell-${index}`} fill={pieColors[index]} />
+                    ))}
+                  </Pie>
+                  <Tooltip
+                    formatter={(value, name) => [
+                      `${value} logs (${(
+                        (Number(value) / csvData.length) *
+                        100
+                      ).toFixed(1)}%)`,
+                      name,
+                    ]}
+                  />
+                </PieChart>
+              </ResponsiveContainer>
+            </CardContent>
+          </Card>
+
+          {/* Raw Data Table */}
+          <Card className="md:col-span-2">
             <CardHeader>
               <CardTitle>Raw Data</CardTitle>
               <CardDescription>CSV data in tabular format</CardDescription>
