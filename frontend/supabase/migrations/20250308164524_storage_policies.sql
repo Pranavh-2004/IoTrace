@@ -12,7 +12,10 @@ INSERT INTO storage.buckets (id, name, public)
 VALUES ('logs', 'logs', false)
 ON CONFLICT (id) DO NOTHING;
 
--- Enable RLS
+-- Enable RLS on storage.objects
+ALTER TABLE storage.objects ENABLE ROW LEVEL SECURITY;
+
+-- Create policy to allow users to read their case logs
 CREATE POLICY "Users can read their case logs"
 ON storage.objects
 FOR SELECT
@@ -21,7 +24,7 @@ USING (
   bucket_id = 'logs' AND 
   EXISTS (
     SELECT 1 FROM cases 
-    WHERE cases.log_id = SUBSTRING(storage.objects.name FROM '^([^.]+)\.csv$') 
+    WHERE cases.log_id::text = SPLIT_PART(storage.objects.name, '.', 1)
     AND cases.user_id = auth.uid()
   )
 ); 
