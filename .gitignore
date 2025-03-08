@@ -2,3 +2,4 @@ venv
 .venv
 .env
 .next/
+node_modules/
