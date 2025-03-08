@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import { Shield, Plus, Loader2 } from 'lucide-react';
-import { useRouter } from 'next/navigation';
-import { supabase } from '@/lib/supabase';
+import { useState, useEffect } from "react";
+import { Shield, Plus, Loader2 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { supabase } from "@/lib/supabase";
 
 import {
   Dialog,
@@ -33,7 +33,7 @@ type Case = {
 export default function Dashboard() {
   const [cases, setCases] = useState<Case[]>([]);
   const [loading, setLoading] = useState(true);
-  const [newCase, setNewCase] = useState({ title: '', description: '' });
+  const [newCase, setNewCase] = useState({ title: "", description: "" });
   const [isCreating, setIsCreating] = useState(false);
   const [dialogOpen, setDialogOpen] = useState(false);
   const router = useRouter();
@@ -45,14 +45,14 @@ export default function Dashboard() {
   const fetchCases = async () => {
     try {
       const { data: cases, error } = await supabase
-        .from('cases')
-        .select('*')
-        .order('created_at', { ascending: false });
+        .from("cases")
+        .select("*")
+        .order("created_at", { ascending: false });
 
       if (error) throw error;
       setCases(cases || []);
     } catch (error) {
-      console.error('Error fetching cases:', error);
+      console.error("Error fetching cases:", error);
     } finally {
       setLoading(false);
     }
@@ -64,12 +64,13 @@ export default function Dashboard() {
     setIsCreating(true);
     try {
       const { data, error } = await supabase
-        .from('cases')
+        .from("cases")
         .insert([
           {
             title: newCase.title,
             description: newCase.description,
             user_id: (await supabase.auth.getUser()).data.user?.id,
+            log_id: 1,
           },
         ])
         .select()
@@ -78,10 +79,10 @@ export default function Dashboard() {
       if (error) throw error;
 
       setCases([data, ...cases]);
-      setNewCase({ title: '', description: '' });
+      setNewCase({ title: "", description: "" });
       setDialogOpen(false);
     } catch (error) {
-      console.error('Error creating case:', error);
+      console.error("Error creating case:", error);
     } finally {
       setIsCreating(false);
     }
@@ -127,7 +128,9 @@ export default function Dashboard() {
                   <Input
                     placeholder="Enter case title"
                     value={newCase.title}
-                    onChange={(e) => setNewCase({ ...newCase, title: e.target.value })}
+                    onChange={(e) =>
+                      setNewCase({ ...newCase, title: e.target.value })
+                    }
                   />
                 </div>
                 <div className="space-y-2">
@@ -135,7 +138,9 @@ export default function Dashboard() {
                   <Textarea
                     placeholder="Enter case description"
                     value={newCase.description}
-                    onChange={(e) => setNewCase({ ...newCase, description: e.target.value })}
+                    onChange={(e) =>
+                      setNewCase({ ...newCase, description: e.target.value })
+                    }
                   />
                 </div>
                 <Button
@@ -143,7 +148,9 @@ export default function Dashboard() {
                   onClick={createCase}
                   disabled={isCreating}
                 >
-                  {isCreating && <Loader2 className="w-4 h-4 mr-2 animate-spin" />}
+                  {isCreating && (
+                    <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                  )}
                   Create Case
                 </Button>
               </div>
@@ -171,7 +178,10 @@ export default function Dashboard() {
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cases.map((case_) => (
-              <Card key={case_.id} className="hover:shadow-lg transition-shadow">
+              <Card
+                key={case_.id}
+                className="hover:shadow-lg transition-shadow"
+              >
                 <CardHeader>
                   <CardTitle className="text-lg">{case_.title}</CardTitle>
                   <CardDescription>
@@ -180,17 +190,22 @@ export default function Dashboard() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4 line-clamp-2">
-                    {case_.description || 'No description provided'}
+                    {case_.description || "No description provided"}
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className={`px-2 py-1 rounded-full text-sm ${
-                      case_.status === 'open'
-                        ? 'bg-green-100 text-green-800'
-                        : 'bg-gray-100 text-gray-800'
-                    }`}>
+                    <span
+                      className={`px-2 py-1 rounded-full text-sm ${
+                        case_.status === "open"
+                          ? "bg-green-100 text-green-800"
+                          : "bg-gray-100 text-gray-800"
+                      }`}
+                    >
                       {case_.status}
                     </span>
-                    <Button variant="outline" onClick={() => router.push(`/cases/${case_.id}`)}>
+                    <Button
+                      variant="outline"
+                      onClick={() => router.push(`/cases/${case_.id}`)}
+                    >
                       View Details
                     </Button>
                   </div>

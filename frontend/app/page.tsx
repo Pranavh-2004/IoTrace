@@ -9,7 +9,10 @@ export default function Home() {
       <nav className="bg-indigo-600 text-white p-4">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Shield className="w-8 h-8" />
+            {/* <Shield className="w-8 h-8" /> */}
+            <div className="flex items-center justify-center">
+              <img src="/cidecode_logo.png" alt="Logo" className="h-10" />
+            </div>
             <span className="text-xl font-bold">IoT Log Vault</span>
           </div>
           <div className="space-x-4">
