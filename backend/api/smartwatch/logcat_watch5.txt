@@ -1,0 +1,368 @@
+2025-03-08 19:26:28.051  1524-1524  WCSExt[1.0]             com.samsung.android.wcs.extension    I  [WearableDataSender] dataItem is sent completely
+2025-03-08 19:26:28.052   426-5854  AF::TrackHandle         audioserver                          D  OpPlayAudio: track:56 usage:1 not muted
+2025-03-08 19:26:28.053   426-5854  AF::TrackHandle         audioserver                          D  OpPlayAudio: track:56 usage:1 not muted
+2025-03-08 19:26:28.053   426-5854  AF::TrackHandle         audioserver                          D  OpPlayAudio: track:56 usage:1 not muted
+2025-03-08 19:26:28.054   426-5854  AF::TrackHandle         audioserver                          D  OpPlayAudio: track:56 usage:1 not muted
+2025-03-08 19:26:28.054   426-5854  AF::TrackHandle         audioserver                          D  OpPlayAudio: track:56 usage:1 not muted
+2025-03-08 19:26:28.054   882-1252  bt_btm                  com.android.bluetooth                D  BTM_SetPowerMode: btm_pm state stored:0
+2025-03-08 19:26:28.056   426-5854  AF::TrackHandle         audioserver                          D  OpPlayAudio: track:56 usage:1 not muted
+2025-03-08 19:26:28.056   426-426   AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.057   426-5854  AF::TrackHandle         audioserver                          D  OpPlayAudio: track:56 usage:1 not muted
+2025-03-08 19:26:28.057   426-5854  AF::TrackHandle         audioserver                          D  OpPlayAudio: track:56 usage:1 not muted
+2025-03-08 19:26:28.060   500-959   BaseRestrictionMgr      system_server                        D  callerPkgName:com.google.android.gms calleePackage:com.google.android.wearable.app action:com.google.android.gms.wearable.BIND_LISTENER for type:bindService
+2025-03-08 19:26:28.060   426-426   AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.063   500-500   AmbientService          system_server                        D  don't need to set showing AmbientWindow
+2025-03-08 19:26:28.063   500-500   WearBluetoothSwitch     system_server                        I  onSensorChanged 0, activation true, acl_state true, isSetupCompleted true
+2025-03-08 19:26:28.063   500-500   WearBluetoothSwitch     system_server                        D  ignore
+2025-03-08 19:26:28.063   500-500   AmbientDream            system_server                        D  [AmbientDream$Callbacks$4] run(592) > mForceAmbientEnabled [false] - > [false]
+2025-03-08 19:26:28.064   500-500   DeviceIdleController    system_server                        D  onSensorChanged: [0.0]
+2025-03-08 19:26:28.065   500-500   sensor                  system_server                        I  DailyHrHandler::parse() end
+2025-03-08 19:26:28.067  9261-9261  SHW - Hear...sorDailyHr com.samsung.android.wear.shealth     I  [onSensorDataReceived]
+2025-03-08 19:26:28.068  9261-9261  SHW - Hear...sorDailyHr com.samsung.android.wear.shealth     I  [onSensorDataReceived]launch
+2025-03-08 19:26:28.069  9261-9261  SHW - Hear...sorDailyHr com.samsung.android.wear.shealth     I  [onSensorDataReceived]job-isActive:true, completed:false
+2025-03-08 19:26:28.070   500-500   AmbientDream            system_server                        D  [AmbientDream] setScreenStateAndDoze(378) > forceAmbient = false, mForceAmbientEnabled = false, mForceAmbientDisabled = true
+2025-03-08 19:26:28.070  9261-9497  SHW - Hear...sorDailyHr com.samsung.android.wear.shealth     I  [createSensorDataList]count:2
+2025-03-08 19:26:28.070   500-500   AmbientDream            system_server                        D  [AmbientDream] setScreenStateAndDoze(408) > ForceScreenOff = falseshouldUpdateDisplay() = false / isDeviceIdleMode true / isDeviceIdleMaintenanceMode = false
+2025-03-08 19:26:28.071   500-500   AmbientDream            system_server                        D  [AmbientDream] setScreenStateAndDoze(411) > display state will be OFF
+2025-03-08 19:26:28.071   500-500   AmbientDream            system_server                        D  [AmbientDream] setScreenStateAndDoze(472) > current DozeScreenState[OFF]
+2025-03-08 19:26:28.071   500-500   AmbientDream            system_server                        D  [AmbientDream] setScreenStateAndDoze(498) > setDozeScreenState(OFF)
+2025-03-08 19:26:28.071   500-500   AmbientDream            system_server                        D  [AmbientDream$Callbacks$4] run(592) > mForceAmbientEnabled [false] - > [false]
+2025-03-08 19:26:28.072   500-500   AmbientDream            system_server                        D  [AmbientDream] setScreenStateAndDoze(378) > forceAmbient = false, mForceAmbientEnabled = false, mForceAmbientDisabled = true
+2025-03-08 19:26:28.072   500-500   AmbientDream            system_server                        D  [AmbientDream] setScreenStateAndDoze(408) > ForceScreenOff = falseshouldUpdateDisplay() = false / isDeviceIdleMode true / isDeviceIdleMaintenanceMode = false
+2025-03-08 19:26:28.072   500-500   AmbientDream            system_server                        D  [AmbientDream] setScreenStateAndDoze(411) > display state will be OFF
+2025-03-08 19:26:28.072   500-500   AmbientDream            system_server                        D  [AmbientDream] setScreenStateAndDoze(472) > current DozeScreenState[OFF]
+2025-03-08 19:26:28.072   500-500   AmbientDream            system_server                        D  [AmbientDream] setScreenStateAndDoze(498) > setDozeScreenState(OFF)
+2025-03-08 19:26:28.076  9261-9497  SHW - Hear...sorDailyHr com.samsung.android.wear.shealth     I  [createSensorDataList] timestamp:1741442174041, activityType:CONTINUOUS, status:ATTACHED, heartRate:-1
+2025-03-08 19:26:28.079  9261-9261  SHW - Hear...sorDailyHr com.samsung.android.wear.shealth     I  [onSensorDataReceived]
+2025-03-08 19:26:28.079  9261-9261  SHW - Hear...sorDailyHr com.samsung.android.wear.shealth     I  [onSensorDataReceived]launch
+2025-03-08 19:26:28.080  9261-9261  SHW - Hear...sorDailyHr com.samsung.android.wear.shealth     I  [onSensorDataReceived]job-isActive:true, completed:false
+2025-03-08 19:26:28.081   500-826   sensor                  system_server                        I  release wake lock SensorFlushWakeLock::25
+2025-03-08 19:26:28.084   426-426   AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.087  9261-9497  SHW - Hear...sorDailyHr com.samsung.android.wear.shealth     I  [createSensorDataList] timestamp:1741442187461, activityType:CONTINUOUS, status:DETACHED, heartRate:-1
+2025-03-08 19:26:28.089  9261-9261  SHW - WhsP...ringSensor com.samsung.android.wear.shealth     I  [onPassiveMonitoringUpdate] start
+2025-03-08 19:26:28.089  9261-30599 SHW - WhsP...ringSensor com.samsung.android.wear.shealth     I  [onPassiveMonitoringUpdate] emit hr data
+2025-03-08 19:26:28.090   500-959   SemSensorService        system_server                        I  SemSensorService unregisterCallback
+2025-03-08 19:26:28.091  1592-5746  SemSensorManager        com...droid.wearable.healthservices  I  unregisterListener
+2025-03-08 19:26:28.093  9261-9261  SHW - WhsP...ringSensor com.samsung.android.wear.shealth     I  [onPassiveMonitoringUpdate] end
+2025-03-08 19:26:28.094   426-426   AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.103   500-4114  BaseRestrictionMgr      system_server                        D  callerPkgName:com.google.android.gms calleePackage:com.samsung.android.wcs.extension action:com.google.android.gms.wearable.BIND_LISTENER for type:bindService
+2025-03-08 19:26:28.105   426-426   AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.108   500-805   BaseRestrictionMgr      system_server                        D  callerPkgName:com.google.android.wearable.app calleePackage:com.google.android.wearable.app action:com.google.android.gms.wearable.BIND_LISTENER for type:bindService
+2025-03-08 19:26:28.110  2074-5752  WCS                     com.google.android.wearable.app      D  [WearableDLS]onDataChanged: erx@fa5c2ac
+2025-03-08 19:26:28.110  9261-9497  SHW - Hear...sorDailyHr com.samsung.android.wear.shealth     I  [createSensorDataList]count:0
+2025-03-08 19:26:28.110  2074-5752  WCS                     com.google.android.wearable.app      D  [WearableHost]onDataChanged: DataItemRef{ uri=wear://103eed25/wcs_extension/internal/status, dataSz=24, numAssets=0 } with tag: wcs_extension to no dataListeners
+2025-03-08 19:26:28.110  2074-5752  WCS                     com.google.android.wearable.app      D  [WcsGmsListenerService]onDataChanged: wear://103eed25/wcs_extension/internal/status, feature wcs_extension
+2025-03-08 19:26:28.112   426-426   AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.115   426-426   AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.116  9261-9497  SHW - DataPointHelper   com.samsung.android.wear.shealth     I  [toHeartRateSensorData] metadata=[hr_rri :0][source :25][hr_status :7]
+2025-03-08 19:26:28.116  9261-9497  SHW - DataPointHelper   com.samsung.android.wear.shealth     I  [toHeartRateSensorData] metadata=[hr_rri :0][source :25][hr_status :8]
+2025-03-08 19:26:28.118  9261-9497  SHW - WhsH...oundSensor com.samsung.android.wear.shealth     I  [loggingSensorEvent] startTime:1741442174042, endTime:1741442187460, zeroCount:0, nonZeroCount:0, modeFrequent:2, modeContinuous:0
+2025-03-08 19:26:28.119   426-426   AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.120  1524-1524  WCSExt[1.0]             com.samsung.android.wcs.extension    I  [WcsExtGmsEventListeners] getNodeClient localNode : 103eed25
+2025-03-08 19:26:28.124   426-5854  AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.125   500-959   BaseRestrictionMgr      system_server                        D  callerPkgName:com.samsung.android.wcs.extension calleePackage:com.samsung.android.wcs.extension action:com.google.android.gms.wearable.BIND_LISTENER for type:bindService
+2025-03-08 19:26:28.126   426-5854  AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.127  1524-5753  WCSExt[1.0]             com.samsung.android.wcs.extension    I  [WcsExtGmsEventListeners] dataevent from 103eed25 / /wcs_extension/internal/status
+2025-03-08 19:26:28.127  1524-5753  WCSExt[1.0]             com.samsung.android.wcs.extension    I  [WcsExtGmsEventListeners] data size [24]
+2025-03-08 19:26:28.127  1524-5753  WCSExt[1.0]             com.samsung.android.wcs.extension    I  [WcsExtGmsEventListeners] match path does not exist
+2025-03-08 19:26:28.128   426-5854  AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.132   426-5854  AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.133  9261-9497  SHW - WhsH...oundSensor com.samsung.android.wear.shealth     I  [summarizeLogSensorData][-1, -1]
+2025-03-08 19:26:28.137   426-5854  AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.140   426-426   AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.142   426-426   AF::TrackHandle         audioserver                          D  OpPlayAudio: track:66 usage:3 not muted
+2025-03-08 19:26:28.984   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:26:28.985   882-1252  bt_btm                  com.android.bluetooth                D  btm_bda_to_acl found
+2025-03-08 19:26:28.985   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:26:28.985   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:26:28.985   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:26:28.985   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:26:28.985   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:26:28.985   882-1252  bt_btm                  com.android.bluetooth                D  btm_handle_to_acl_index
+2025-03-08 19:26:28.985   882-1252  bt_btm                  com.android.bluetooth                D  btm_pm_proc_mode_change switched from UNKNOWN to ACTIVE.
+2025-03-08 19:26:28.986   882-1252  bt_btm                  com.android.bluetooth                D  btm mode change to active; check l2c_link for outgoing packets
+2025-03-08 19:26:28.986   882-1252  bt_btm                  com.android.bluetooth                D  btm_sco_disc_chk_pend_for_modechange: hci_handle 0x00ec, p->state 0x01
+2025-03-08 19:26:28.986   882-1252  bt_btm                  com.android.bluetooth                D  btm_cont_rswitch
+2025-03-08 19:26:30.488   882-1252  bt_btm                  com.android.bluetooth                D  btm_pm_snd_md_req switching from ACTIVE to SNIFF.
+2025-03-08 19:26:30.516   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:26:30.516   882-1252  bt_btm                  com.android.bluetooth                D  btm_bda_to_acl found
+2025-03-08 19:26:30.516   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:26:30.516   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:26:30.517   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:26:30.517   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:26:30.517   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:26:30.517   882-1252  bt_btm                  com.android.bluetooth                D  btm_handle_to_acl_index
+2025-03-08 19:26:30.517   882-1252  bt_btm                  com.android.bluetooth                D  btm_pm_proc_mode_change switched from UNKNOWN to SNIFF.
+2025-03-08 19:26:30.517   882-1252  bt_btm                  com.android.bluetooth                D  btm mode change to active; check l2c_link for outgoing packets
+2025-03-08 19:26:30.517   882-1252  bt_btm                  com.android.bluetooth                D  btm_sco_disc_chk_pend_for_modechange: hci_handle 0x00ec, p->state 0x01
+2025-03-08 19:26:30.518   882-1252  bt_btm                  com.android.bluetooth                D  btm_cont_rswitch
+2025-03-08 19:26:34.156   500-760   SSRM:Temperature        system_server                        D  SIOP:: AP : 333 CP : -999 BLK : 331 BAT : 331
+2025-03-08 19:26:34.784   500-728   PowerManagerService     system_server                        I  [PWL] Off : 75s ago
+2025-03-08 19:26:39.015   500-710   Watchdog                system_server                        E  !@Sync 1689 [2025-03-08 13:56:39.014]
+2025-03-08 19:26:40.307   500-722   MARsMiniPolicyManager   system_server                        D  triggerAction called!
+2025-03-08 19:26:40.321   500-722   LocationManagerService  system_server                        I  getGPSUsingApps() called
+2025-03-08 19:26:40.321   500-722   LocProxy                system_server                        I  getGPSUsingApps() called
+2025-03-08 19:26:40.323   500-722   LocProxy                system_server                        I  LocationHistory - 1 : {} / 2 : {}
+2025-03-08 19:26:43.274   383-407   BatteryDump             and...re.health@2.1-service-samsung  D  wait_for_battery_event : occured : change@/devices/platform/battery/power_supply/battery 
+2025-03-08 19:26:43.280   383-407   BatteryDump             and...re.health@2.1-service-samsung  E  !@new_battery_dump : 3827,-38,2000,250,43,329,330,DisChg,None,Good,NONE,0,Normal,0,0,10200,22,0,0x77,0x7a,0x7c,0x4e,0x02,0xa0,0x04,0x00,0,0,4328,3843,0,0
+2025-03-08 19:26:44.229   500-760   SSRM:Temperature        system_server                        D  SIOP:: AP : 332 CP : -999 BLK : 330 BAT : 329
+2025-03-08 19:26:54.311   500-760   SSRM:Temperature        system_server                        D  SIOP:: AP : 330 CP : -999 BLK : 328 BAT : 329
+2025-03-08 19:26:55.339   500-722   MARsMiniPolicyManager   system_server                        D  triggerAction called!
+2025-03-08 19:26:55.358   500-722   LocationManagerService  system_server                        I  getGPSUsingApps() called
+2025-03-08 19:26:55.358   500-722   LocProxy                system_server                        I  getGPSUsingApps() called
+2025-03-08 19:26:55.360   500-722   LocProxy                system_server                        I  LocationHistory - 1 : {} / 2 : {}
+2025-03-08 19:26:55.948   500-762   SamsungAlarmManager     system_server                        D  Expired : 4, now=112762446 newRTC=1741442215948
+2025-03-08 19:26:55.952   500-762   SamsungAlarmManager     system_server                        V  Sending to uid : 1000 now=112762446, action=com.android.clockwork.connectivity.action.ACTION_EXIT_CELL_LINGER alarm=Alarm{915a057 type 2 when 112736380 android} allowWhileIdle=false
+2025-03-08 19:26:55.955   500-713   BaseRestrictionMgr      system_server                        D  callerPkgName:null calleePackage:android action:com.android.clockwork.connectivity.action.ACTION_EXIT_CELL_LINGER for type:broadcast
+2025-03-08 19:26:55.955   500-762   ActivityManager         system_server                        D  Received BROADCAST intent 0xa93788b Key{broadcastIntent pkg=android intent=act=com.android.clockwork.connectivity.action.ACTION_EXIT_CELL_LINGER flags=0x4000000 u=0} requestCode=0 sent=0 from uid 1000
+2025-03-08 19:26:55.958   500-500   WearCellularMediator    system_server                        D  Leaving cell linger state: OFF_PROXY_CONNECTED:DEVICE_IDLE_MODE_CHANGED
+2025-03-08 19:26:55.961   500-861   WearCellularMediator    system_server                        D  handleMessage: { when=-2ms what=0 obj=com.android.clockwork.cellular.WearCellularMediator$RadioStateChangeReqInfo@53d302d target=com.android.clockwork.cellular.WearCellularMediator$RadioPowerHandler }
+2025-03-08 19:26:55.961   500-861   WearCellularMediator    system_server                        E  getDontShowAgain() Not support ShowRadioOffMessage
+2025-03-08 19:26:55.969   500-861   WearCellularMediator    system_server                        D  OFF_PROXY_CONNECTED:DEVICE_IDLE_MODE_CHANGED radio power currently same as intent: false
+2025-03-08 19:26:55.977   500-762   SamsungAlarmManager     system_server                        V  Sending to uid : 1000 now=112762446, L=8de08de:*job.cleanup* alarm=Alarm{f896962 type 3 when 112762443 android} allowWhileIdle=false
+2025-03-08 19:26:55.982   500-762   SamsungAlarmManager     system_server                        V  Sending to uid : 5010 now=112762446, action=com.samsung.runestone.logCollectorManager.LOCATION_UPDATE alarm=Alarm{f69eaf3 type 1 when 1741442215482 com.samsung.android.watch.runestone.app} allowWhileIdle=false
+2025-03-08 19:26:55.983   500-762   ActivityManager         system_server                        D  Received BROADCAST intent 0x96d1d76 Key{broadcastIntent pkg=com.samsung.android.watch.runestone.app intent=act=com.samsung.runestone.logCollectorManager.LOCATION_UPDATE flags=0x0 u=0} requestCode=0 sent=0 from uid 1000
+2025-03-08 19:26:55.984   500-713   BaseRestrictionMgr      system_server                        D  callerPkgName:null calleePackage:com.samsung.android.watch.runestone.app action:com.samsung.runestone.logCollectorManager.LOCATION_UPDATE for type:broadcast
+2025-03-08 19:26:55.986   500-762   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112943949, now=112762484
+2025-03-08 19:26:55.988   500-762   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:3 / NW:112802770, now=112762485
+2025-03-08 19:26:55.990   500-500   SamsungAlarmManager     system_server                        D  setInexact (T:3/F:8/AC:false) 20250308T194431(O:113817989/E:113817989/ME:114609615/RI:0) now=112762487 - CU:1000/CP:500/L:8de08de:*job.cleanup*
+2025-03-08 19:26:55.990   500-500   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112943949, now=112762487
+2025-03-08 19:26:55.990   500-500   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:3 / NW:112802770, now=112762487
+2025-03-08 19:26:55.993   500-805   SamsungAlarmManager     system_server                        D  setExact (T:3/F:9/AC:false) 20250308T195656(O:114563000/E:114563000/ME:114563000/RI:0) now=112762490 - CU:1000/CP:500/L:8fd7e8:StatsCompanionService.anomaly
+2025-03-08 19:26:55.993   500-805   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112943949, now=112762491
+2025-03-08 19:26:55.993   500-805   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:3 / NW:112802770, now=112762491
+2025-03-08 19:26:55.995 21605-21605 RUNESTONE-...ION-LOGGER com...g.android.watch.runestone.app  I  [2] LocationLogger$mRequestAlarmReceiver$1.onReceive(LocationLogger.kt:220) : Location update alarm went off
+2025-03-08 19:26:56.010 21605-21605 RUNESTONE-...ION-LOGGER com...g.android.watch.runestone.app  I  [2] LocationLogger.requestFlpLocation(LocationLogger.kt:428) : requestFlpLocation enter!
+2025-03-08 19:26:56.017   500-805   SamsungAlarmManager     system_server                        D  Cancel Alarm calling from uid:1000 pid :500 / L:8fd7e8
+2025-03-08 19:26:56.018   500-805   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112943949, now=112762515
+2025-03-08 19:26:56.018   500-805   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:3 / NW:112802770, now=112762515
+2025-03-08 19:26:56.027   500-805   BaseRestrictionMgr      system_server                        D  callerPkgName:com.samsung.android.watch.runestone.app calleePackage:com.google.android.gms action:com.google.android.location.internal.GoogleLocationManagerService.START for type:bindService
+2025-03-08 19:26:56.076   500-857   LocProxy                system_server                        I  LocationHistory - [FusedLocationApi] request e35c56b(listener) PRIORITY_BALANCED_POWER_ACCURACY interval=0 dist=0.0m  maxWaitTime=0 from com.samsung.android.watch.runestone.app (5010 background)
+2025-03-08 19:26:56.082   500-805   SamsungAlarmManager     system_server                        D  setExact (T:2/F:5/AC:false) 20250308T192726(O:112792515/E:112792515/ME:112792515/RI:0) now=112762580 - CU:10118/CP:28405/OP:PendingIntent{f694d47: PendingIntentRecord{14bb974 com.google.android.gms/fused_location_provider broadcastIntent}}
+2025-03-08 19:26:56.082   500-805   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112792515, now=112762580
+2025-03-08 19:26:56.095   500-4114  BaseRestrictionMgr      system_server                        D  callerPkgName:com.google.android.gms calleePackage:com.google.android.gms action:com.google.android.location.internal.GMS_NLP for type:startService
+2025-03-08 19:26:56.108   500-805   SamsungAlarmManager     system_server                        D  setExact (T:3/F:9/AC:false) 20250308T195656(O:114563000/E:114563000/ME:114563000/RI:0) now=112762605 - CU:1000/CP:500/L:8fd7e8:StatsCompanionService.anomaly
+2025-03-08 19:26:56.108   500-805   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112792515, now=112762606
+2025-03-08 19:26:56.109   500-805   SamsungAlarmManager     system_server                        D  Cancel Alarm calling from uid:10118 pid :28405 / L:f03e6d1
+2025-03-08 19:26:56.114 28405-28644 AlarmManager            com.google.android.gms.persistent    W  alarm window unlikely to be respected [CONTEXT service_id=231 ]
+                                                                                                    java.lang.IllegalArgumentException: alarm "NetworkLocationLocator" has short window length
+                                                                                                    	at almk.c(:com.google.android.gms@250832071@25.08.32 (220300-731361394):45)
+                                                                                                    	at bxsm.d(:com.google.android.gms@250832071@25.08.32 (220300-731361394):149)
+                                                                                                    	at bxpi.n(:com.google.android.gms@250832071@25.08.32 (220300-731361394):103)
+                                                                                                    	at bxpi.i(:com.google.android.gms@250832071@25.08.32 (220300-731361394):877)
+                                                                                                    	at byaf.v(:com.google.android.gms@250832071@25.08.32 (220300-731361394):296)
+                                                                                                    	at bxzl.v(:com.google.android.gms@250832071@25.08.32 (220300-731361394):22)
+                                                                                                    	at bxri.handleMessage(:com.google.android.gms@250832071@25.08.32 (220300-731361394):761)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106)
+                                                                                                    	at amsn.iO(:com.google.android.gms@250832071@25.08.32 (220300-731361394):1)
+                                                                                                    	at amsn.dispatchMessage(:com.google.android.gms@250832071@25.08.32 (220300-731361394):138)
+                                                                                                    	at android.os.Looper.loop(Looper.java:246)
+                                                                                                    	at android.os.HandlerThread.run(HandlerThread.java:67)
+2025-03-08 19:26:56.123   500-805   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112792515, now=112762621
+2025-03-08 19:26:56.124   500-805   SamsungAlarmManager     system_server                        D  setExact (T:3/F:9/AC:false) 20250308T192940(O:112927000/E:112927000/ME:112927000/RI:0) now=112762621 - CU:1000/CP:500/L:8fd7e8:StatsCompanionService.anomaly
+2025-03-08 19:26:56.124   500-805   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112792515, now=112762622
+2025-03-08 19:26:56.133   500-805   SamsungAlarmManager     system_server                        D  Cancel Alarm calling from uid:1000 pid :500 / L:8fd7e8
+2025-03-08 19:26:56.134   500-805   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112792515, now=112762632
+2025-03-08 19:26:57.283   310-310   io_stats                iod                                  I  !@ 179,0 r 2032670 42941234 w 214123 5418532 d 128733 4114160 f 283734 158153 iot 1715352 0 th 51200 0 0 pt 0 inp 0 0 50747.911
+2025-03-08 19:26:58.155   500-712   AppOps                  system_server                        I  updateUidProcState uid: 10025 procState: 0 capability:7
+2025-03-08 19:26:58.163   500-713   BaseRestrictionMgr      system_server                        D  callerPkgName:android calleePackage:android action:android.os.action.POWER_SAVE_TEMP_WHITELIST_CHANGED for type:broadcast
+2025-03-08 19:26:58.177   500-712   AppOps                  system_server                        I  updateUidProcState uid: 10047 procState: 0 capability:7
+2025-03-08 19:26:58.181   500-713   BaseRestrictionMgr      system_server                        D  callerPkgName:android calleePackage:android action:android.os.action.POWER_SAVE_TEMP_WHITELIST_CHANGED for type:broadcast
+2025-03-08 19:26:59.774   500-720   BatteryExt...tatsWorker system_server                        D  update stats : reason=wakelock-change    flag=1
+2025-03-08 19:26:59.928   320-751   android.sy....0-service android.system.suspend@1.0-service   E  Error opening event_count for wakeup30: Original kwl [Path]=../../devices/platform/100b0000.hsi2c/i2c-3/3-0028/wakeup/wakeup30: Permission denied
+2025-03-08 19:26:59.928   356-356   audit                   auditd                               E  type=1400 audit(1741442219.925:71019): avc:  denied  { read } for  pid=320 comm="Binder:320_3" name="event_count" dev="sysfs" ino=33922 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0 SEPF_SM-R925F_11_0004 audit_filtered
+2025-03-08 19:26:59.928   356-356   audit                   auditd                               E  type=1400 audit(1741442219.925:71020): avc:  denied  { read } for  pid=320 comm="Binder:320_3" name="max_time_ms" dev="sysfs" ino=33927 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0 SEPF_SM-R925F_11_0004 audit_filtered
+2025-03-08 19:26:59.928   356-356   audit                   auditd                               E  type=1400 audit(1741442219.925:71021): avc:  denied  { read } for  pid=320 comm="Binder:320_3" name="wakeup_count" dev="sysfs" ino=33923 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0 SEPF_SM-R925F_11_0004 audit_filtered
+2025-03-08 19:26:59.928   356-356   audit                   auditd                               E  type=1400 audit(1741442219.925:71022): avc:  denied  { read } for  pid=320 comm="Binder:320_3" name="total_time_ms" dev="sysfs" ino=33926 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0 SEPF_SM-R925F_11_0004 audit_filtered
+2025-03-08 19:26:59.928   356-356   audit                   auditd                               E  type=1400 audit(1741442219.925:71023): avc:  denied  { read } for  pid=320 comm="Binder:320_3" name="expire_count" dev="sysfs" ino=33924 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0 SEPF_SM-R925F_11_0004 audit_filtered
+2025-03-08 19:26:59.961   500-720   BatteryExt...tatsWorker system_server                        D  done updateExternalStatsLocked
+2025-03-08 19:27:04.391   500-760   SSRM:Temperature        system_server                        D  SIOP:: AP : 329 CP : 342 BLK : 327 BAT : 329
+2025-03-08 19:27:04.787   500-728   PowerManagerService     system_server                        I  [PWL] Off : 105s ago
+2025-03-08 19:27:05.993  1897-1963  ContactsPr...r_EventLog android.process.acore                I  contents_sample_state: [CONTACT contacts(293) data(755) accounts({vnd.sec.contact.phone (1)=320}) accounts deleted({}) calls([sec_logtype:100 cnt:9, sec_logtype:1000 cnt:199]) countryIso(IN) userId(0)  ]
+                                                                                                    contents_sample_state: [ agr({[1 ,1]=23, [1]=268, [1 ,1 ,1]=2})  ]
+                                                                                                    contents_sample_state: [ actCnt({android.process.acore(1897)=1})  ]
+                                                                                                    contents_sample_state: [PROFILE contacts(1) data(2) accounts({vnd.sec.contact.phone (1)=1})  ] [SAPROFILE contacts(0) data(0) accounts({})  ]
+                                                                                                    contents_sample_state: [STORAGE Contacts(CE) Profile(CE) SAProfile(CE) CallLog(CE)  ]
+2025-03-08 19:27:06.001  1897-1963  ContactsPr...r_EventLog android.process.acore                I  Flush buffer to file cnt : 1 size : 1Kb duration : 6ms lastUpdatedAfter : 60174 ms mFlush_time_threasold : 2000 mCurrentSize : 611
+2025-03-08 19:27:09.020   500-710   Watchdog                system_server                        E  !@Sync 1690 [2025-03-08 13:57:09.019]
+2025-03-08 19:27:10.362   500-722   MARsMiniPolicyManager   system_server                        D  triggerAction called!
+2025-03-08 19:27:10.373   500-722   LocationManagerService  system_server                        I  getGPSUsingApps() called
+2025-03-08 19:27:10.373   500-722   LocProxy                system_server                        I  getGPSUsingApps() called
+2025-03-08 19:27:10.374   500-722   LocProxy                system_server                        I  LocationHistory - 1 : {} / 2 : {5010}
+2025-03-08 19:27:13.322   383-407   BatteryDump             and...re.health@2.1-service-samsung  D  wait_for_battery_event : occured : change@/devices/platform/battery/power_supply/battery 
+2025-03-08 19:27:13.324   383-407   BatteryDump             and...re.health@2.1-service-samsung  E  !@new_battery_dump : 3819,-56,2000,250,43,326,327,DisChg,None,Good,NONE,0,Normal,0,0,10200,22,0,0x37,0x7a,0x7c,0x4e,0x02,0xa0,0x04,0x00,0,0,4321,3843,0,0
+2025-03-08 19:27:14.470   500-760   SSRM:Temperature        system_server                        D  SIOP:: AP : 329 CP : 341 BLK : 327 BAT : 326
+2025-03-08 19:27:20.245   320-3576  android.sy....0-service android.system.suspend@1.0-service   I  !@SystemSuspend: wakeup_count+
+2025-03-08 19:27:20.257   320-3576  android.sy....0-service android.system.suspend@1.0-service   I  !@SystemSuspend: wakeup_count-
+2025-03-08 19:27:20.257   320-3576  android.sy....0-service android.system.suspend@1.0-service   I  !@SystemSuspend: mSuspendCounter+
+2025-03-08 19:27:20.257   320-3576  android.sy....0-service android.system.suspend@1.0-service   I  !@SystemSuspend: mSuspendCounter-
+2025-03-08 19:27:20.258   320-3576  android.sy....0-service android.system.suspend@1.0-service   I  !@SystemSuspend: write mem+
+2025-03-08 19:27:20.377   320-3576  android.sy....0-service android.system.suspend@1.0-service   I  !@SystemSuspend: write mem-
+2025-03-08 19:27:20.379   383-407   BatteryDump             and...re.health@2.1-service-samsung  D  wait_for_battery_event : occured : change@/devices/platform/battery/power_supply/battery 
+2025-03-08 19:27:20.388   500-805   BatteryStatsService     system_server                        I  In wakeup_callback: suspend aborted
+2025-03-08 19:27:20.477   383-407   BatteryDump             and...re.health@2.1-service-samsung  E  !@new_battery_dump : 3817,-56,2000,250,43,325,327,DisChg,None,Good,NONE,0,Normal,0,0,10200,22,0,0x37,0x7a,0x7c,0x4e,0x02,0xa0,0x04,0x00,0,0,4321,3843,0,0
+2025-03-08 19:27:21.597   310-310   io_stats                iod                                  I  !@ 179,0 r 2032670 42941234 w 214133 5418692 d 128761 4114368 f 283757 158163 iot 1715464 0 th 51200 0 0 pt 0 inp 0 0 50772.227
+2025-03-08 19:27:24.514   500-760   SSRM:Temperature        system_server                        D  SIOP:: AP : 328 CP : -999 BLK : 327 BAT : 325
+2025-03-08 19:27:25.387   500-722   MARsMiniPolicyManager   system_server                        D  triggerAction called!
+2025-03-08 19:27:25.400   500-722   LocationManagerService  system_server                        I  getGPSUsingApps() called
+2025-03-08 19:27:25.401   500-722   LocProxy                system_server                        I  getGPSUsingApps() called
+2025-03-08 19:27:25.401   500-722   LocProxy                system_server                        I  LocationHistory - 1 : {} / 2 : {5010}
+2025-03-08 19:27:26.018   500-762   SamsungAlarmManager     system_server                        D  Expired : 4, now=112792515 newRTC=1741442246017
+2025-03-08 19:27:26.019   500-762   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112943949, now=112792516
+2025-03-08 19:27:26.019   500-762   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:3 / NW:112802770, now=112792517
+2025-03-08 19:27:26.122   500-805   SamsungAlarmManager     system_server                        D  Cancel Alarm calling from uid:10118 pid :28405 / OP:PendingIntent{e85e736: PendingIntentRecord{14bb974 com.google.android.gms/fused_location_provider broadcastIntent}}
+2025-03-08 19:27:26.124   500-805   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112943949, now=112792622
+2025-03-08 19:27:26.124   500-805   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:3 / NW:112802770, now=112792622
+2025-03-08 19:27:26.144   500-4114  SamsungAlarmManager     system_server                        D  setExact (T:3/F:9/AC:false) 20250308T195726(O:114593000/E:114593000/ME:114593000/RI:0) now=112792642 - CU:1000/CP:500/L:8fd7e8:StatsCompanionService.anomaly
+2025-03-08 19:27:26.145   500-4114  SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112943949, now=112792642
+2025-03-08 19:27:26.145   500-4114  SamsungAlarmManager     system_server                        I  setLocked to kernel - W:3 / NW:112802770, now=112792643
+2025-03-08 19:27:26.160   500-4114  SamsungAlarmManager     system_server                        D  Cancel Alarm calling from uid:1000 pid :500 / L:8fd7e8
+2025-03-08 19:27:26.163   500-4114  SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112943949, now=112792660
+2025-03-08 19:27:26.164   500-4114  SamsungAlarmManager     system_server                        I  setLocked to kernel - W:3 / NW:112802770, now=112792661
+2025-03-08 19:27:26.190   500-4114  BaseRestrictionMgr      system_server                        D  callerPkgName:com.google.android.gms calleePackage:com.google.android.gms action:com.google.android.location.internal.GMS_NLP for type:startService
+2025-03-08 19:27:26.193 21605-21605 RUNESTONE-...ION-LOGGER com...g.android.watch.runestone.app  E  [2] LocationLogger$requestFlpLocation$1.onSuccess(LocationLogger.kt:446) : FLP failed to get location
+2025-03-08 19:27:26.209 21605-21605 RUNESTONE-...ION-LOGGER com...g.android.watch.runestone.app  I  [2] LocationLogger.setLocationUpdateAlarm(LocationLogger.kt:200) : setLocationUpdateAlarm time interval = 3600000
+2025-03-08 19:27:26.218   500-4114  SamsungAlarmManager     system_server                        D  setInexact (T:1/F:8/AC:false) 20250308T202726(O:1741445846212/E:116392710/ME:119092710/RI:0) now=112792715 - CU:5010/CP:21605/OP:PendingIntent{53a1637: PendingIntentRecord{96d1d76 com.samsung.android.watch.runestone.app broadcastIntent}}
+2025-03-08 19:27:26.218   500-4114  SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112943949, now=112792716
+2025-03-08 19:27:26.218   500-4114  SamsungAlarmManager     system_server                        I  setLocked to kernel - W:3 / NW:112802770, now=112792716
+2025-03-08 19:27:26.229   500-805   SamsungAlarmManager     system_server                        D  setExact (T:3/F:9/AC:false) 20250308T193011(O:112958000/E:112958000/ME:112958000/RI:0) now=112792726 - CU:1000/CP:500/L:8fd7e8:StatsCompanionService.anomaly
+2025-03-08 19:27:26.229   500-805   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112943949, now=112792727
+2025-03-08 19:27:26.229   500-805   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:3 / NW:112802770, now=112792727
+2025-03-08 19:27:26.232 21605-21663 RUNESTONE-...ION-LOGGER com...g.android.watch.runestone.app  I  [5428] LocationLogger.flush(LocationLogger.kt:179) : location logger flush
+2025-03-08 19:27:26.233 21605-21605 RUNESTONE-...ION-LOGGER com...g.android.watch.runestone.app  E  [2] LocationLogger$requestFlpLocation$2.then(LocationLogger.kt:458) : get current location finished
+2025-03-08 19:27:26.235   500-805   SamsungAlarmManager     system_server                        D  Cancel Alarm calling from uid:10118 pid :28405 / L:3777e9d
+2025-03-08 19:27:26.238 21605-21663 RUNESTONE-...-DATA-BASE com...g.android.watch.runestone.app  I  [5428] LocationDataBase.insertLocation(LocationDataBase.kt:142) : insertLocation list
+2025-03-08 19:27:26.272   500-4114  SamsungAlarmManager     system_server                        D  Cancel Alarm calling from uid:1000 pid :500 / L:8fd7e8
+2025-03-08 19:27:26.274   500-4114  SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112943949, now=112792771
+2025-03-08 19:27:26.274   500-4114  SamsungAlarmManager     system_server                        I  setLocked to kernel - W:3 / NW:112802770, now=112792772
+2025-03-08 19:27:27.680   310-310   io_stats                iod                                  I  !@ 179,0 r 2032703 42941842 w 214136 5418708 d 128761 4114368 f 283759 158164 iot 1715488 0 th 51200 0 0 pt 0 inp 0 0 50778.311
+2025-03-08 19:27:34.586   500-760   SSRM:Temperature        system_server                        D  SIOP:: AP : 327 CP : -999 BLK : 326 BAT : 325
+2025-03-08 19:27:36.235   500-857   LocProxy                system_server                        I  LocationHistory - [FusedLocationApi] remove e35c56b from com.samsung.android.watch.runestone.app(5010)
+2025-03-08 19:27:36.273   500-762   SamsungAlarmManager     system_server                        D  Expired : 8, now=112802770 newRTC=1741442256272
+2025-03-08 19:27:36.273   500-762   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112943949, now=112802771
+2025-03-08 19:27:36.274   500-762   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:3 / NW:112812433, now=112802771
+2025-03-08 19:27:37.813   310-310   io_stats                iod                                  I  !@ 179,0 r 2032713 42941946 w 214141 5418800 d 128761 4114368 f 283762 158166 iot 1715504 0 th 51200 0 0 pt 0 inp 0 0 50788.443
+2025-03-08 19:27:39.026   500-710   Watchdog                system_server                        E  !@Sync 1691 [2025-03-08 13:57:39.023]
+2025-03-08 19:27:39.799   500-728   PowerManagerService     system_server                        I  [PWL] Off : 140s ago
+2025-03-08 19:27:40.419   500-722   MARsMiniPolicyManager   system_server                        D  triggerAction called!
+2025-03-08 19:27:40.434   500-722   LocationManagerService  system_server                        I  getGPSUsingApps() called
+2025-03-08 19:27:40.434   500-722   LocProxy                system_server                        I  getGPSUsingApps() called
+2025-03-08 19:27:40.435   500-722   LocProxy                system_server                        I  LocationHistory - 1 : {} / 2 : {}
+2025-03-08 19:27:44.660   500-760   SSRM:Temperature        system_server                        D  SIOP:: AP : 327 CP : 338 BLK : 325 BAT : 325
+2025-03-08 19:27:45.935   500-762   SamsungAlarmManager     system_server                        D  Expired : 8, now=112812433 newRTC=1741442265935
+2025-03-08 19:27:45.935   500-762   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:2 / NW:112943949, now=112812433
+2025-03-08 19:27:45.935   500-762   AlarmManager            system_server                        E  Set nextNonWakeup as mNextNonWakeupDeliveryTime=112982771 , orig nextNonWakeup=0
+2025-03-08 19:27:45.935   500-762   SamsungAlarmManager     system_server                        I  setLocked to kernel - W:3 / NW:112982771, now=112812433
+2025-03-08 19:27:50.417   383-407   BatteryDump             and...re.health@2.1-service-samsung  D  wait_for_battery_event : occured : change@/devices/platform/battery/power_supply/battery 
+2025-03-08 19:27:50.422   383-407   BatteryDump             and...re.health@2.1-service-samsung  E  !@new_battery_dump : 3826,-39,2000,250,43,323,325,DisChg,None,Good,NONE,0,Normal,0,0,10200,22,0,0x72,0x7a,0x7c,0x4e,0x02,0xa0,0x04,0x00,0,0,4313,3842,0,0
+2025-03-08 19:27:54.738   500-760   SSRM:Temperature        system_server                        D  SIOP:: AP : 327 CP : -999 BLK : 325 BAT : 323
+2025-03-08 19:27:55.451   500-722   MARsMiniPolicyManager   system_server                        D  triggerAction called!
+2025-03-08 19:27:55.474   500-722   LocationManagerService  system_server                        I  getGPSUsingApps() called
+2025-03-08 19:27:55.474   500-722   LocProxy                system_server                        I  getGPSUsingApps() called
+2025-03-08 19:27:55.475   500-722   LocProxy                system_server                        I  LocationHistory - 1 : {} / 2 : {}
+2025-03-08 19:28:04.811   500-760   SSRM:Temperature        system_server                        D  SIOP:: AP : 325 CP : -999 BLK : 325 BAT : 323
+2025-03-08 19:28:06.117  1897-1963  ContactsPr...r_EventLog android.process.acore                I  contents_sample_state: [CONTACT contacts(293) data(755) accounts({vnd.sec.contact.phone (1)=320}) accounts deleted({}) calls([sec_logtype:100 cnt:9, sec_logtype:1000 cnt:199]) countryIso(IN) userId(0)  ]
+                                                                                                    contents_sample_state: [ agr({[1 ,1]=23, [1]=268, [1 ,1 ,1]=2})  ]
+                                                                                                    contents_sample_state: [ actCnt({android.process.acore(1897)=1})  ]
+                                                                                                    contents_sample_state: [PROFILE contacts(1) data(2) accounts({vnd.sec.contact.phone (1)=1})  ] [SAPROFILE contacts(0) data(0) accounts({})  ]
+                                                                                                    contents_sample_state: [STORAGE Contacts(CE) Profile(CE) SAProfile(CE) CallLog(CE)  ]
+2025-03-08 19:28:06.128  1897-1963  ContactsPr...r_EventLog android.process.acore                I  Flush buffer to file cnt : 1 size : 1Kb duration : 4ms lastUpdatedAfter : 60126 ms mFlush_time_threasold : 2000 mCurrentSize : 611
+2025-03-08 19:28:09.033   500-710   Watchdog                system_server                        E  !@Sync 1692 [2025-03-08 13:58:09.031]
+2025-03-08 19:28:10.491   500-722   MARsMiniPolicyManager   system_server                        D  triggerAction called!
+2025-03-08 19:28:10.512   500-722   LocationManagerService  system_server                        I  getGPSUsingApps() called
+2025-03-08 19:28:10.513   500-722   LocProxy                system_server                        I  getGPSUsingApps() called
+2025-03-08 19:28:10.513   500-722   LocProxy                system_server                        I  LocationHistory - 1 : {} / 2 : {}
+2025-03-08 19:28:14.884   500-760   SSRM:Temperature        system_server                        D  SIOP:: AP : 325 CP : 337 BLK : 324 BAT : 323
+2025-03-08 19:28:15.276  4220-4220  SLPASVC                 com.samsung.euicc                    I  no busy worker. stop foreground                                                                     [at com.samsung.euicc.lpaService.LpaServiceHandler.checkStopCondition(LpaServiceHandler.java:69)]
+2025-03-08 19:28:15.278  4220-4220  SLPASVC                 com.samsung.euicc                    W  LPA service is shutting down.                                                                       [at com.samsung.euicc.lpaService.LpaServiceHandler.handleMessage(LpaServiceHandler.java:54)]
+2025-03-08 19:28:15.300  4220-4220  SLPASVC                 com.samsung.euicc                    I  onDestroy                                                                                           [at com.samsung.euicc.lpaService.LpaService.onDestroy(LpaService.java:178)]
+2025-03-08 19:28:15.302  4220-4220  SLPASVC                 com.samsung.euicc                    W  clear resource                                                                                      [at com.samsung.euicc.lpaService.LpaService.clearResource(LpaService.java:184)]
+2025-03-08 19:28:15.304  4220-4220  SLPASVC                 com.samsung.euicc                    W  updateFreeNvMemorySize                                                                              [at com.samsung.euicc.lpaService.LpaService.updateFreeNvMemorySize(LpaService.java:221)]
+2025-03-08 19:28:15.327  4220-4220  SLPASVC                 com.samsung.euicc                    I  create EuiccCommandInterface: -1                                                                    [at com.samsung.euicc.lpaService.gsma.phase2.es10.uicc.EuiccCommandInterface.get(EuiccCommandInterface.java:38)]
+2025-03-08 19:28:15.329  4220-4253  SLPASVC                 com.samsung.euicc                    I  EuiccLogicalChannel::openBySlot(): 0                                                                [at com.samsung.euicc.lpaService.gsma.phase2.es10.uicc.EuiccLogicalChannel.openBySlot(EuiccLogicalChannel.java:49)]
+2025-03-08 19:28:15.436  4220-4253  SLPASVC                 com.samsung.euicc                    I  0x00000001 was opened                                                                               [at com.samsung.euicc.lpaService.gsma.phase2.es10.uicc.EuiccLogicalChannel.openBySlot(EuiccLogicalChannel.java:83)]
+2025-03-08 19:28:15.440  4220-4253  SLPASVC                 com.samsung.euicc                    I   cla: 80 ins: E2 Le: 00                                                                             [at com.samsung.euicc.lpaService.gsma.phase2.es10.uicc.EuiccCommandInterface$EuiccSlot.iccTransmitApduLogicalChannel(EuiccCommandInterface$EuiccSlot.java:161)]
+2025-03-08 19:28:15.440  4220-4253  SLPASVC                 com.samsung.euicc                    I  data : BF2200
+2025-03-08 19:28:15.440  4220-4253  SLPASVC                 com.samsung.euicc                    I  [STORE DATA] blockNumber : 0                                                                        [at com.samsung.euicc.lpaService.gsma.phase2.es10.uicc.EuiccCommandInterface$EuiccSlot.iccTransmitApduLogicalChannel(EuiccCommandInterface$EuiccSlot.java:171)]
+2025-03-08 19:28:15.441  4220-4253  SLPASVC                 com.samsung.euicc                    I  case 4 command APDU                                                                                 [at com.samsung.euicc.lpaService.gsma.phase2.es10.uicc.EuiccCommandInterface$EuiccSlot.getCmdApdu(EuiccCommandInterface$EuiccSlot.java:293)]
+2025-03-08 19:28:15.441  4220-4253  SLPASVC                 com.samsung.euicc                    I  Terminal -> eUICC: 80E2910003BF220000
+2025-03-08 19:28:15.528  4220-4253  SLPASVC                 com.samsung.euicc                    I  Terminal <- eUICC: BF22819C810302030182030202028303621019840F8101008204000766E48304000069208505067F36FBC086030D00008703020300880203D8A916041481370F5125D0B1D408D4C3B232E6D25E795BEBFBAA16041481370F5125D0B1D408D4C3B232E6D25E795BEBFB8B01029902064004030100000C0F4E502D48472D55502D313032332D32AC18800D504C4154464F524D4C4142454C8107444C4F4155524C9000
+2025-03-08 19:28:15.547  4220-4253  SLPASVC                 com.samsung.euicc                    I  APDU Response: BF22819C810302030182030202028303621019840F8101008204000766E48304000069208505067F36FBC086030D00008703020300880203D8A916041481370F5125D0B1D408D4C3B232E6D25E795BEBFBAA16041481370F5125D0B1D408D4C3B232E6D25E795BEBFB8B01029902064004030100000C0F4E502D48472D55502D313032332D32AC18800D504C4154464F524D4C4142454C8107444C4F4155524C9000
+2025-03-08 19:28:15.548  4220-4253  SLPASVC                 com.samsung.euicc                    I  APDU StatusWord - 9X XX                                                                             [at com.samsung.euicc.lpaService.gsma.phase2.es10.uicc.EuiccCommandInterface$EuiccSlot.handleResponse(EuiccCommandInterface$EuiccSlot.java:318)]
+2025-03-08 19:28:15.549  4220-4253  SLPASVC                 com.samsung.euicc                    I  EuiccLogicalChannel::close(): 1                                                                     [at com.samsung.euicc.lpaService.gsma.phase2.es10.uicc.EuiccLogicalChannel.close(EuiccLogicalChannel.java:31)]
+2025-03-08 19:28:15.583  4220-4253  SLPASVC                 com.samsung.euicc                    I  0x00000001 was closed                                                                               [at com.samsung.euicc.lpaService.gsma.phase2.es10.uicc.EuiccLogicalChannel.close(EuiccLogicalChannel.java:35)]
+---------------------------- PROCESS ENDED (2774) for package com.example.shakedetector ----------------------------
+2025-03-08 19:28:15.594  4220-4253  SLPASVC                 com.samsung.euicc                    I  open channel count(0): 0                                                                            [at com.samsung.euicc.lpaService.gsma.phase2.es10.uicc.EuiccLogicalChannel.close(EuiccLogicalChannel.java:38)]
+2025-03-08 19:28:15.634  4220-4220  SLPASVC                 com.samsung.euicc                    E  available memory: 485092                                                                            [at com.samsung.euicc.lpaService.gsma.phase2.es10.Es10Phase2.getAvailableMemory(Es10Phase2.java:1045)]
+2025-03-08 19:28:15.640  4220-4220  SLPASVC                 com.samsung.euicc                    I  update FreeSize(0):485092                                                                           [at com.samsung.euicc.lpaService.LpaService.lambda$updateFreeNvMemorySize$1(LpaService.java:230)]
+2025-03-08 19:28:15.642  4220-4220  SLPASVC                 com.samsung.euicc                    W  stop start                                                                                          [at com.samsung.euicc.lpaService.StopHandler.stop(StopHandler.java:18)]
+2025-03-08 19:28:15.645  4220-4220  SLPASVC                 com.samsung.euicc                    W  stop end                                                                                            [at com.samsung.euicc.lpaService.StopHandler.stop(StopHandler.java:38)]
+2025-03-08 19:28:15.669   500-805   ActivityManager         system_server                        I  Killing 2774:com.example.shakedetector/u0a154 (adj 999): empty #11
+2025-03-08 19:28:15.675   500-1365  NetlinkSocket           system_server                        W  maximum read
+2025-03-08 19:28:15.681   500-1365  FreecessController      system_server                        D  UFZ : com.example.shakedetector(2774)
+2025-03-08 19:28:15.683   500-1365  FreecessController      system_server                        D  UFZ : com.example.shakedetector(0), reason: Signal
+2025-03-08 19:28:15.687   372-1023  TrafficController       netd                                 E  FREECESS
+2025-03-08 19:28:15.692   500-1369  FreecessController      system_server                        D  SendNetlink type:2 mod:3 src_portid:500 dst_portid:305402420 version:536870912 target_uid:-1 flag:0 code:0 cmd:1 uid:10154
+2025-03-08 19:28:15.693   500-1369  PowerManagerService     system_server                        I  [PWL] SetWakeLockEnableDisable uid = 10154 , disable= false
+2025-03-08 19:28:15.693   500-1369  PowerManagerService     system_server                        I  [PWL] can not change uid =  10154
+2025-03-08 19:28:15.693   500-1369  FreecessController      system_server                        D  apply [LRs:false] to uid[10154]
+2025-03-08 19:28:15.693   500-1369  LocationManagerService  system_server                        W  onFreezeStateChanged, uid[10154]=false
+2025-03-08 19:28:15.693   500-1369  AlarmManager            system_server                        V  unblockMARsRestrictedAlarmsForUidPackage: uid = 10154, packageName = com.example.shakedetector
+2025-03-08 19:28:15.693   500-1369  FreecessController      system_server                        D  send pending alarm to packageName:com.example.shakedetector, uid:10154
+2025-03-08 19:28:15.729   373-373   Zygote                  pid-373                              I  Process 2774 exited due to signal 9 (Killed)
+2025-03-08 19:28:15.763   500-715   libprocessgroup         system_server                        I  Successfully killed process cgroup uid 10154 pid 2774 in 86ms
+2025-03-08 19:28:19.803   500-728   PowerManagerService     system_server                        I  [PWL] Off : 180s ago
+2025-03-08 19:28:20.447   383-407   BatteryDump             and...re.health@2.1-service-samsung  D  wait_for_battery_event : occured : change@/devices/platform/battery/power_supply/battery 
+2025-03-08 19:28:20.450   383-407   BatteryDump             and...re.health@2.1-service-samsung  E  !@new_battery_dump : 3819,-53,2000,250,43,322,324,DisChg,None,Good,NONE,0,Normal,0,0,10200,22,0,0x37,0x7a,0x7c,0x4e,0x02,0xa0,0x04,0x00,0,0,4309,3842,0,0
+2025-03-08 19:28:24.963   500-760   SSRM:Temperature        system_server                        D  SIOP:: AP : 325 CP : -999 BLK : 324 BAT : 322
+2025-03-08 19:28:25.531   500-722   MARsMiniPolicyManager   system_server                        D  triggerAction called!
+2025-03-08 19:28:25.554   500-722   LocationManagerService  system_server                        I  getGPSUsingApps() called
+2025-03-08 19:28:25.555   500-722   LocProxy                system_server                        I  getGPSUsingApps() called
+2025-03-08 19:28:25.555   500-722   LocProxy                system_server                        I  LocationHistory - 1 : {} / 2 : {}
+2025-03-08 19:28:27.391   320-3576  android.sy....0-service android.system.suspend@1.0-service   I  !@SystemSuspend: wakeup_count+
+2025-03-08 19:28:27.391   320-3576  android.sy....0-service android.system.suspend@1.0-service   I  !@SystemSuspend: wakeup_count-
+2025-03-08 19:28:27.392   320-3576  android.sy....0-service android.system.suspend@1.0-service   I  !@SystemSuspend: mSuspendCounter+
+2025-03-08 19:28:27.393   320-3576  android.sy....0-service android.system.suspend@1.0-service   I  !@SystemSuspend: mSuspendCounter-
+2025-03-08 19:28:27.393   320-3576  android.sy....0-service android.system.suspend@1.0-service   I  !@SystemSuspend: write mem+
+2025-03-08 19:28:27.432   320-3576  android.sy....0-service android.system.suspend@1.0-service   I  !@SystemSuspend: write mem-
+2025-03-08 19:28:27.435   500-805   BatteryStatsService     system_server                        I  In wakeup_callback: suspend aborted
+2025-03-08 19:28:28.449   310-310   io_stats                iod                                  I  !@ 179,0 r 2032714 42941962 w 214154 5418972 d 128784 4114592 f 283789 158177 iot 1715524 0 th 51200 0 0 pt 0 inp 0 0 50839.079
+2025-03-08 19:28:35.025   500-760   SSRM:Temperature        system_server                        D  SIOP:: AP : 325 CP : -999 BLK : 323 BAT : 322
+2025-03-08 19:28:35.485   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:28:35.486   882-1252  bt_btm                  com.android.bluetooth                D  btm_bda_to_acl found
+2025-03-08 19:28:35.486   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:28:35.487   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:28:35.487   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:28:35.487   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:28:35.487   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:28:35.487   882-1252  bt_btm                  com.android.bluetooth                D  btm_handle_to_acl_index
+2025-03-08 19:28:35.487   882-1252  bt_btm                  com.android.bluetooth                D  btm_pm_proc_mode_change switched from SNIFF to ACTIVE.
+2025-03-08 19:28:35.487   882-1252  bt_btm                  com.android.bluetooth                D  btm mode change to active; check l2c_link for outgoing packets
+2025-03-08 19:28:35.487   882-1252  bt_btm                  com.android.bluetooth                D  btm_sco_disc_chk_pend_for_modechange: hci_handle 0x00ec, p->state 0x01
+2025-03-08 19:28:35.488   882-1252  bt_btm                  com.android.bluetooth                D  btm_cont_rswitch
+2025-03-08 19:28:35.611   500-4114  BaseRestrictionMgr      system_server                        D  callerPkgName:com.google.android.gms calleePackage:com.google.android.wearable.app action:com.google.android.gms.wearable.BIND_LISTENER for type:bindService
+2025-03-08 19:28:35.624   500-805   BaseRestrictionMgr      system_server                        D  callerPkgName:com.google.android.gms calleePackage:com.samsung.android.watch.weather action:com.google.android.gms.wearable.BIND_LISTENER for type:bindService
+2025-03-08 19:28:35.643   500-4114  AppOps                  system_server                        I  updateUidProcState uid: 10025 procState: 0 capability:7
+2025-03-08 19:28:35.644   500-713   BaseRestrictionMgr      system_server                        D  callerPkgName:android calleePackage:android action:android.os.action.POWER_SAVE_TEMP_WHITELIST_CHANGED for type:broadcast
+2025-03-08 19:28:35.649   500-4114  BaseRestrictionMgr      system_server                        D  callerPkgName:com.google.android.wearable.app calleePackage:com.google.android.wearable.app action:com.google.android.gms.wearable.BIND_LISTENER for type:bindService
+2025-03-08 19:28:35.651  2074-5762  WCS                     com.google.android.wearable.app      D  [WearableDLS]onMessageReceived: sourceNode [92c8e42], path[/samsung_weather/message/weather_message], dataSize[67]
+2025-03-08 19:28:35.652  2074-5762  WCS                     com.google.android.wearable.app      D  [WcsListenerProvider]constructed listeners for feature: samsung_weather, []
+2025-03-08 19:28:35.652  2074-5762  WCS                     com.google.android.wearable.app      D  [WcsGmsListenerService]onMessageReceived: /samsung_weather/message/weather_message, feature samsung_weather
+2025-03-08 19:28:35.668   500-713   BaseRestrictionMgr      system_server                        D  callerPkgName:android calleePackage:android action:android.os.action.POWER_SAVE_TEMP_WHITELIST_CHANGED for type:broadcast
+2025-03-08 19:28:35.686   500-4114  BaseRestrictionMgr      system_server                        D  callerPkgName:com.samsung.android.watch.weather calleePackage:com.samsung.android.watch.weather action:com.google.android.gms.wearable.BIND_LISTENER for type:bindService
+2025-03-08 19:28:35.740 16492-5763  [WEATHER_W...rvice(116) com.samsung.android.watch.weather    I  {[E45E1898D4A1C7D72BD29263D59D6EC33E6859D881A359F159B6F4EBBA7C4829A57092D872F93E25C55A05757D6902D7A835378C3AD5D111A694F3CE50BE0B3913AEF7413724AFEEEB9314B5B7D125C109E81256214916FCA1E611F982352341]}
+2025-03-08 19:28:35.763 16492-5763  [WEATHER_W...ervice(86) com.samsung.android.watch.weather    I  {[E45E1898D4A1C7D72BD29263D59D6EC3BA2854EE0D98DF242B7B62D8138F2600511A53271CEA5614B30B1ADBF323ED72C355FD31D54170FE1D9E987021EE93B1B94B799EBFD1BCCA4DDE8BBABDEC8B1202C9B6310F5FFF49F564ABA655D68E98]}
+2025-03-08 19:28:36.557   310-310   io_stats                iod                                  I  !@ 179,0 r 2032957 42950922 w 214158 5419004 d 128784 4114592 f 283793 158179 iot 1715620 0 th 51200 0 0 pt 0 inp 0 0 50847.188
+2025-03-08 19:28:37.086   882-1252  bt_btm                  com.android.bluetooth                D  btm_pm_snd_md_req switching from ACTIVE to SNIFF.
+2025-03-08 19:28:37.153   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:28:37.153   882-1252  bt_btm                  com.android.bluetooth                D  btm_bda_to_acl found
+2025-03-08 19:28:37.153   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:28:37.153   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:28:37.153   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:28:37.154   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:28:37.154   882-1252  bt_btm                  com.android.bluetooth                D  BTM_GetHCIConnHandle
+2025-03-08 19:28:37.154   882-1252  bt_btm                  com.android.bluetooth                D  btm_handle_to_acl_index
+2025-03-08 19:28:37.154   882-1252  bt_btm                  com.android.bluetooth                D  btm_pm_proc_mode_change switched from UNKNOWN to SNIFF.
+2025-03-08 19:28:37.154   882-1252  bt_btm                  com.android.bluetooth                D  btm mode change to active; check l2c_link for outgoing packets
+2025-03-08 19:28:37.154   882-1252  bt_btm                  com.android.bluetooth                D  btm_sco_disc_chk_pend_for_modechange: hci_handle 0x00ec, p->state 0x01
+2025-03-08 19:28:37.154   882-1252  bt_btm                  com.android.bluetooth 
