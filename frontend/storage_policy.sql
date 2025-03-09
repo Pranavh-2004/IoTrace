@@ -1,0 +1,1 @@
+CREATE POLICY "Users can read their case log files" ON storage.objects FOR SELECT TO authenticated USING (bucket_id = 'logs' AND EXISTS (SELECT 1 FROM public.cases WHERE cases.user_id = auth.uid() AND cases.id::text = regexp_replace(name, '\.csv$', '')));

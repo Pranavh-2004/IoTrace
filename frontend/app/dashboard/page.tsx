@@ -70,7 +70,6 @@ export default function Dashboard() {
             title: newCase.title,
             description: newCase.description,
             user_id: (await supabase.auth.getUser()).data.user?.id,
-            log_id: 1,
           },
         ])
         .select()

@@ -42,7 +42,6 @@ type Case = {
   description: string;
   status: string;
   created_at: string;
-  log_id: string;
 };
 
 type CSVData = {
@@ -78,21 +77,21 @@ export default function CaseDetails() {
   };
 
   const setupRealtimeSubscription = () => {
-    if (!caseData?.log_id) return;
+    if (!caseData?.id) return;
 
     const channel = supabase
-      .channel(`log-${caseData.log_id}`)
+      .channel(`log-${caseData.id}`)
       .on(
         "postgres_changes",
         {
           event: "*",
           schema: "storage",
           table: "objects",
-          filter: `name=eq:${caseData.log_id}.csv`,
+          filter: `name=eq:${caseData.id}.csv`,
         },
         async () => {
           // Refetch CSV data when the file changes
-          await fetchCSVData(caseData.log_id);
+          await fetchCSVData(caseData.id);
         }
       )
       .subscribe();
@@ -100,14 +99,14 @@ export default function CaseDetails() {
     return channel;
   };
 
-  const fetchCSVData = async (logId: string) => {
+  const fetchCSVData = async (caseId: string) => {
     try {
       // Check if we have access to the file first
       const { data: fileInfo, error: fileError } = await supabase.storage
         .from("logs")
         .list("", {
           limit: 1,
-          search: `${logId}.csv`,
+          search: `${caseId}.csv`,
         });
 
       if (fileError) {
@@ -120,7 +119,7 @@ export default function CaseDetails() {
 
       const { data: fileData, error: downloadError } = await supabase.storage
         .from("logs")
-        .download(`${logId}.csv`);
+        .download(`${caseId}.csv`);
 
       if (downloadError) {
         if (downloadError.message.includes("storage/permission_denied")) {
@@ -179,12 +178,8 @@ export default function CaseDetails() {
 
       setCaseData(caseData);
 
-      // Fetch CSV data if log_id exists
-      if (caseData.log_id) {
-        await fetchCSVData(caseData.log_id);
-      } else {
-        setError("No log file associated with this case");
-      }
+      // Fetch CSV data using the case id
+      await fetchCSVData(caseData.id);
     } catch (error) {
       console.error("Error fetching case details:", error);
       if (error instanceof Error) {
@@ -235,7 +230,7 @@ export default function CaseDetails() {
 
   // Get top 10 components and combine the rest into "Others"
   const sortedComponents = Object.entries(componentStats).sort(
-    ([, a], [, b]) => b - a
+    ([, a], [, b]) => Number(b) - Number(a)
   );
 
   const pieChartData = sortedComponents.slice(0, 10).map(([name, value]) => ({
@@ -247,7 +242,7 @@ export default function CaseDetails() {
   if (sortedComponents.length > 10) {
     const othersValue = sortedComponents
       .slice(10)
-      .reduce((sum, [, value]) => sum + value, 0);
+      .reduce((sum, [, value]) => sum + Number(value), 0);
 
     pieChartData.push({
       name: "Others",
@@ -299,11 +294,6 @@ export default function CaseDetails() {
           </CardHeader>
           <CardContent>
             <p className="text-gray-600">{caseData?.description}</p>
-            {caseData?.log_id && (
-              <p className="text-sm text-gray-500 mt-2">
-                Log ID: {caseData.log_id}
-              </p>
-            )}
           </CardContent>
         </Card>
 
