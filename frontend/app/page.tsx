@@ -11,9 +11,9 @@ export default function Home() {
           <div className="flex items-center space-x-2">
             {/* <Shield className="w-8 h-8" /> */}
             <div className="flex items-center justify-center">
-              <img src="/cidecode_logo.png" alt="Logo" className="h-10" />
+              <img src="/cidecode_logo.png" alt="Logo" className="h-6" />
             </div>
-            <span className="text-xl font-bold">IoT Log Vault</span>
+            <span className="text-2xl font-bold">IoT Log Vault</span>
           </div>
           <div className="space-x-4">
             <Link href="/login" className="hover:text-indigo-200">
