@@ -268,7 +268,7 @@ export default function CaseDetails() {
       <nav className="bg-indigo-600 text-white p-4">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Shield className="w-8 h-8" />
+              <img src="/cidecode_logo.png" alt="Logo" className="h-6" />
             <span className="text-xl font-bold">IoT Log Vault</span>
           </div>
         </div>
@@ -290,6 +290,10 @@ export default function CaseDetails() {
             <CardDescription>
               Created on{" "}
               {new Date(caseData?.created_at || "").toLocaleDateString()}
+            </CardDescription>
+            <CardDescription>
+              Case ID{" "}
+              {caseData.id}
             </CardDescription>
           </CardHeader>
           <CardContent>
