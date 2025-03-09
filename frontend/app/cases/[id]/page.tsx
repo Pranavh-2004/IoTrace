@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { Shield, ArrowLeft } from "lucide-react";
+import { Shield, ArrowLeft, FileDown, Loader2 } from "lucide-react";
 import Link from "next/link";
 import Papa from "papaparse";
 import {
@@ -35,6 +35,9 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
+import { analyzeLogsWithGemini } from "@/lib/gemini";
+import { generateEvidencePDF } from "@/lib/pdf-generator";
+import { useToast } from "@/components/ui/use-toast";
 
 type Case = {
   id: string;
@@ -55,6 +58,8 @@ export default function CaseDetails() {
   const [csvData, setCSVData] = useState<CSVData>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
+  const { toast } = useToast();
 
   useEffect(() => {
     checkAuth();
@@ -192,6 +197,49 @@ export default function CaseDetails() {
     }
   };
 
+  const handleGeneratePDF = async () => {
+    if (!caseData || !csvData.length) return;
+
+    setIsGeneratingPDF(true);
+    try {
+      // Get AI analysis of the logs
+      const analysis = await analyzeLogsWithGemini(csvData);
+
+      // Generate PDF
+      const pdfBuffer = await generateEvidencePDF(caseData, csvData, analysis);
+
+      // Create and download the PDF
+      const blob = new Blob([pdfBuffer], { type: "application/pdf" });
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `case-${caseData.id}-evidence.pdf`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+
+      toast({
+        title: "PDF Generated Successfully",
+        description: "Your evidence report has been downloaded.",
+        duration: 5000,
+      });
+    } catch (error) {
+      console.error("Error generating PDF:", error);
+      toast({
+        title: "Error Generating PDF",
+        description:
+          error instanceof Error
+            ? error.message
+            : "An unexpected error occurred",
+        variant: "destructive",
+        duration: 5000,
+      });
+    } finally {
+      setIsGeneratingPDF(false);
+    }
+  };
+
   if (loading) {
     return (
       <div className="flex justify-center items-center min-h-screen">
@@ -286,11 +334,32 @@ export default function CaseDetails() {
 
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle>{caseData?.title}</CardTitle>
-            <CardDescription>
-              Created on{" "}
-              {new Date(caseData?.created_at || "").toLocaleDateString()}
-            </CardDescription>
+            <div className="flex justify-between items-start">
+              <div>
+                <CardTitle>{caseData?.title}</CardTitle>
+                <CardDescription>
+                  Created on{" "}
+                  {new Date(caseData?.created_at || "").toLocaleDateString()}
+                </CardDescription>
+              </div>
+              <Button
+                onClick={handleGeneratePDF}
+                disabled={isGeneratingPDF || !csvData.length}
+                className="bg-indigo-600 hover:bg-indigo-700"
+              >
+                {isGeneratingPDF ? (
+                  <>
+                    <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                    Generating...
+                  </>
+                ) : (
+                  <>
+                    <FileDown className="w-4 h-4 mr-2" />
+                    Generate Evidence PDF
+                  </>
+                )}
+              </Button>
+            </div>
           </CardHeader>
           <CardContent>
             <p className="text-gray-600">{caseData?.description}</p>
