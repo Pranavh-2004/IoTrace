@@ -37,7 +37,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { analyzeLogsWithGemini } from "@/lib/gemini";
 import { generateEvidencePDF } from "@/lib/pdf-generator";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 
 type Case = {
   id: string;
@@ -45,10 +45,15 @@ type Case = {
   description: string;
   status: string;
   created_at: string;
+  log_id: string;
+  case_id: string;
 };
 
 type CSVData = {
-  [key: string]: string | number;
+  timestamp: string;
+  component?: string;
+  package?: string;
+  [key: string]: string | number | undefined;
 }[];
 
 export default function CaseDetails() {
@@ -82,21 +87,23 @@ export default function CaseDetails() {
   };
 
   const setupRealtimeSubscription = () => {
-    if (!caseData?.id) return;
+    if (!caseData) return;
 
+    // Subscribe to both possible file patterns
+    const fileId = caseData.log_id || caseData.id;
     const channel = supabase
-      .channel(`log-${caseData.id}`)
+      .channel(`log-${fileId}`)
       .on(
         "postgres_changes",
         {
           event: "*",
           schema: "storage",
           table: "objects",
-          filter: `name=eq:${caseData.id}.csv`,
+          filter: `name=eq:${fileId}.csv OR name=eq:case-${fileId}.csv`,
         },
         async () => {
           // Refetch CSV data when the file changes
-          await fetchCSVData(caseData.id);
+          await fetchCSVData(fileId);
         }
       )
       .subscribe();
@@ -104,33 +111,38 @@ export default function CaseDetails() {
     return channel;
   };
 
-  const fetchCSVData = async (caseId: string) => {
+  const fetchCSVData = async (fileId: string) => {
     try {
-      // Check if we have access to the file first
-      const { data: fileInfo, error: fileError } = await supabase.storage
-        .from("logs")
-        .list("", {
-          limit: 1,
-          search: `${caseId}.csv`,
-        });
+      // Try both fileId.csv and case-{fileId}.csv patterns
+      const filesToCheck = [`${fileId}.csv`, `case-${fileId}.csv`];
+      let fileData: Blob | null = null;
+      let foundFile = false;
 
-      if (fileError) {
-        throw fileError;
-      }
+      for (const fileName of filesToCheck) {
+        // Check if file exists
+        const { data: fileInfo, error: fileError } = await supabase.storage
+          .from("logs")
+          .list("", {
+            limit: 1,
+            search: fileName,
+          });
 
-      if (!fileInfo || fileInfo.length === 0) {
-        throw new Error("Log file not found");
-      }
+        if (!fileError && fileInfo && fileInfo.length > 0) {
+          // Found the file, try to download it
+          const { data, error: downloadError } = await supabase.storage
+            .from("logs")
+            .download(fileName);
 
-      const { data: fileData, error: downloadError } = await supabase.storage
-        .from("logs")
-        .download(`${caseId}.csv`);
-
-      if (downloadError) {
-        if (downloadError.message.includes("storage/permission_denied")) {
-          throw new Error("You do not have permission to access this log file");
+          if (!downloadError && data) {
+            fileData = data;
+            foundFile = true;
+            break;
+          }
         }
-        throw downloadError;
+      }
+
+      if (!foundFile || !fileData) {
+        throw new Error("Log file not found");
       }
 
       const text = await fileData.text();
@@ -146,8 +158,8 @@ export default function CaseDetails() {
 
       // Sort data by timestamp to ensure chronological order
       const sortedData = (result.data as CSVData).sort((a, b) => {
-        const timeA = new Date(a.timestamp as string).getTime();
-        const timeB = new Date(b.timestamp as string).getTime();
+        const timeA = new Date(a.timestamp).getTime();
+        const timeB = new Date(b.timestamp).getTime();
         return timeA - timeB;
       });
 
@@ -183,8 +195,13 @@ export default function CaseDetails() {
 
       setCaseData(caseData);
 
-      // Fetch CSV data using the case id
-      await fetchCSVData(caseData.id);
+      // Try fetching CSV data using either log_id or case_id
+      const fileId = caseData.log_id || caseData.id;
+      if (fileId) {
+        await fetchCSVData(fileId);
+      } else {
+        setError("No log file associated with this case");
+      }
     } catch (error) {
       console.error("Error fetching case details:", error);
       if (error instanceof Error) {
@@ -268,11 +285,10 @@ export default function CaseDetails() {
     return `hsl(${hue}, 70%, 50%)`;
   });
 
-  // Calculate component statistics
-  const componentStats = csvData.reduce((acc, row) => {
-    const component = String(row.component || row.package || "unknown");
-    const currentCount = (acc[component] || 0) as number;
-    acc[component] = currentCount + 1;
+  // Calculate component statistics with proper type safety
+  const componentStats = csvData.reduce((acc: Record<string, number>, log) => {
+    const component = String(log.component || log.package || "unknown");
+    acc[component] = (acc[component] || 0) + 1;
     return acc;
   }, {} as Record<string, number>);
 
@@ -316,7 +332,7 @@ export default function CaseDetails() {
       <nav className="bg-indigo-600 text-white p-4">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
-              <img src="/cidecode_logo.png" alt="Logo" className="h-6" />
+            <Shield className="w-8 h-8" />
             <span className="text-xl font-bold">IoT Log Vault</span>
           </div>
         </div>
@@ -334,7 +350,6 @@ export default function CaseDetails() {
 
         <Card className="mb-8">
           <CardHeader>
-<<<<<<< HEAD
             <div className="flex justify-between items-start">
               <div>
                 <CardTitle>{caseData?.title}</CardTitle>
@@ -342,6 +357,7 @@ export default function CaseDetails() {
                   Created on{" "}
                   {new Date(caseData?.created_at || "").toLocaleDateString()}
                 </CardDescription>
+                <CardDescription>Case ID: {caseData?.id}</CardDescription>
               </div>
               <Button
                 onClick={handleGeneratePDF}
@@ -361,17 +377,6 @@ export default function CaseDetails() {
                 )}
               </Button>
             </div>
-=======
-            <CardTitle>{caseData?.title}</CardTitle>
-            <CardDescription>
-              Created on{" "}
-              {new Date(caseData?.created_at || "").toLocaleDateString()}
-            </CardDescription>
-            <CardDescription>
-              Case ID{" "}
-              {caseData.id}
-            </CardDescription>
->>>>>>> 9260e6c51770d4e8d54555df91d23c8d7edeb5a4
           </CardHeader>
           <CardContent>
             <p className="text-gray-600">{caseData?.description}</p>
